@@ -19,6 +19,9 @@ class Scrman < Formula
     # Install library files
     libexec.install Dir["lib/*"]
     
+    # Install the main executable to libexec
+    libexec.install "bin/scrman"
+    
     # Create wrapper script that sets up gem environment and load paths
     (bin/"scrman").write <<~EOS
       #!/bin/bash
@@ -26,10 +29,6 @@ class Scrman < Formula
       export GEM_PATH="#{libexec}"
       exec "#{Formula["ruby"].opt_bin}/ruby" -I"#{libexec}" "#{libexec}/scrman" "$@"
     EOS
-    
-    # Install the main executable to libexec
-    (libexec/"scrman").install "bin/scrman"
-    chmod 0755, libexec/"scrman"
   end
 
   test do
