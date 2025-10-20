@@ -1,8 +1,8 @@
 class Scrman < Formula
   desc "Script manager - Create and manage scripts in multiple languages"
   homepage "https://github.com/BlakeASmith/scrman"
-  url "https://github.com/BlakeASmith/scrman/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "494e9290c0d187d39d67bb4c35b8cf3c70ee34a846b9c43264589534fada8a64"
+  url "https://github.com/BlakeASmith/scrman/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "2557af5b116f7ab0d12e5172b47e27a0cd2b736b58a77a044caa46c96ce3c314"
   license "MIT"
   head "https://github.com/BlakeASmith/scrman.git", branch: "main"
 
